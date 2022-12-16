@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+	<input type="text" id="age" value="" placeholder="enter age"><br><br>
+	<input type="text" id="sex" value="" placeholder="enter sex"><br><br>
+	<button type="button" id="btn1" value="" >click </button>
+	<h1  id="para"></h1>
+<script>
+	let btn =document.getElementById("value");
+	btn1.addEventListener("click",myfun);
+	 
+	 function myfun(){
+		var page=document.getElementById("age").value;
+		var page1=document.getElementById("sex").value;
+		if(page1 == 'Female') {
+		document.getElementById("para").innerHTML=("You  work only in urban areas")
+		}
+		if(page1 == 'Male') {
+			if((page >= 20) && (page < 40)) {
+			document.getElementById("para").innerHTML=("any")
+			}
+		else if((page >= 40) && (page < 60)) {
+			document.getElementById("para").innerHTML=("only in urban areas")
+			}
+			else {
+		document.getElementById("para").innerHTML=("error")
+		}
+		}
+	}
+</script>
+</body>
+</html>
